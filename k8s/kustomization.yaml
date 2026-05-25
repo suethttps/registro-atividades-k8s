@@ -9,6 +9,6 @@ resources:
   - api-deployment.yaml
   - api-service.yaml
 images:
-  - name: eduardosilvasc/registro-atividades-backend
-    newName: eduardosilvasc/registro-atividades-backend
+  - name: soetheprime/registro-atividades-backend
+    newName: soetheprime/registro-atividades-backend
     newTag: latest
