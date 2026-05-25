@@ -2,13 +2,12 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: registro-atividades
 resources:
-  - namespace.yaml
-  - postgres-pvc.yaml
-  - postgres-deployment.yaml
-  - postgres-service.yaml
-  - api-deployment.yaml
-  - api-service.yaml
+- namespace.yaml
+- postgres-pvc.yaml
+- postgres-deployment.yaml
+- postgres-service.yaml
+- api-deployment.yaml
+- api-service.yaml
 images:
-  - name: soetheprime/registro-atividades-backend
-    newName: soetheprime/registro-atividades-backend
-    newTag: latest
+- name: soetheprime/registro-atividades-backend
+  newTag: af5c56c54518c6fb12615cc775a2e5fc4a8f7c9a
